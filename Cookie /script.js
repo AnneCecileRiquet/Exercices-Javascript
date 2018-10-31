@@ -65,33 +65,12 @@ let autoClicker = () => {
 }
 
 let bonusTime = () => {
-    if(score < 5000){
-		alert('Aie tu dois avoir 5000 clics !');
-	}else{
-		score -= 5000;
-		affichage.innerHTML = score;
-	
-		let timeLeft = 30;
-
-		let countdown = () => {
-  			if (timeLeft == 0) {
-    			clearInterval(timerId);
-    			bonus.innerHTML = "200% - 30s - prix: 5000";
-    			bonus.removeAttribute('disabled', 'disabled');
-  			} else {
-  				bonus.setAttribute('disabled', 'disabled');
-    			bonus.innerHTML = timeLeft;
-    			timeLeft--;
-    			setInterval(augmenterMultiplicateur(2), 1000);
-  			}
-		}
-		let timerId = setInterval(countdown, 1000);
-	}	
-}
+    
 
 
 
-    /*score -= 5000
+
+    score -= 5000
     if (score < 5000) {
         bonus.disabled = true;
     }
@@ -114,50 +93,13 @@ let bonusScore = () => {
 let bonusScoreEnd = () => {
     multiplicateur = multiplicateur / 2;
     console.log (multiplicateur);
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*let getBonus = () => {
-	if(score < 5000){
-		alert('Aie tu dois avoir 5000 clics !');
-	}else{
-		score -= 5000;
-		affichage.innerHTML = score;
-	
-		let timeLeft = 30;
-
-		let countdown = () => {
-  			if (timeLeft == 0) {
-    			clearInterval(timerId);
-    			bonus.innerHTML = "200% - 30s - prix: 5000";
-    			bonus.removeAttribute('disabled', 'disabled');
-  			} else {
-  				bonus.setAttribute('disabled', 'disabled');
-    			bonus.innerHTML = timeLeft;
-    			timeLeft--;
-    			setInterval(augmenterMultiplicateur(2), 1000);
-  			}
-		}
-		let timerId = setInterval(countdown, 1000);
-	}	
 }
 
-bonus.addEventListener('click', getBonus);*/
+
+
+
+
+
 
 
 
