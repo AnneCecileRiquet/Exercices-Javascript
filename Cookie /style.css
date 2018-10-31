@@ -1,0 +1,39 @@
+body {
+  background: -webkit-radial-gradient(rgb(182, 62, 6), rgb(255, 166, 77));
+  background: radial-gradient(rgb(182, 62, 6), rgb(255, 166, 77));
+  background-size: auto;
+  text-align: center;
+  vertical-align: middle;
+  background-size: 640px 540px;
+
+}
+
+
+
+.mybutton{
+ 
+  
+  
+  font-size: 25px;
+  padding: 10px 40px;
+  margin: 20px;
+  border: 4px solid rgb(123, 42, 4);
+  border-radius: 100px;
+  background: linear-gradient(to bottom, rgb(182, 62, 6), rgb(27, 9, 6));
+  -moz-box-shadow: rgb(182, 62, 6) 0px 0px 16px 10px;
+  box-shadow: rgb(182, 62, 6) 0px 0px 16px 10px;
+  text-decoration: none;
+  color:rgb(255, 166, 77);
+  }
+#myCanvas{
+  background: linear-gradient(to bottom, rgb(182, 62, 6), rgb(27, 9, 6));
+  -moz-box-shadow: rgb(182, 62, 6) 0px 0px 16px 10px;
+box-shadow: rgb(182, 62, 6) 0px 0px 16px 10px;
+}
+
+#affichage, #affichage1{
+  color:rgb(255, 166, 77);
+  letter-spacing: 3px;
+  font-size: 3em;
+  text-shadow: 3px 2px rgb(27, 9, 6);
+}

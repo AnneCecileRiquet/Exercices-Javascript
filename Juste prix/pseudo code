@@ -1,0 +1,21 @@
+prix= ALEATOIRE(20)
+chance=10
+ECRIRE "Trouve le bon prix "
+essai=0
+TANTQUE chance !=0 FAIRE
+ECRIRE "Devine"
+LIRE essai
+chance= chance -1
+SI chance > 0 ALORS
+SI essai =prix ALORS
+ECRIRE "Bravo, vous avez gagné"
+chance = 0
+SINON SI essai > prix ALORS
+ECRIRE "C'est moins !"
+SINON SI essai < prix ALORS
+ECRIRE "C'est plus !"
+FINSI
+SINON
+ECRIRE "Vous avez perdu !"
+FINSI
+FINTANTQUE
