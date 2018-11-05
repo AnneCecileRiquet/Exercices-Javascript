@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: -webkit-radial-gradient(rgb(207, 222, 12), rgb(7, 169, 104));
+    background: radial-gradient(rgb(207, 222, 12), rgb(0, 102, 0));
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 102, 0);
+    text-decoration: wavy underline rgb(0, 102, 0);
+    letter-spacing: 3px;
+    font-size: 3em;
+    text-shadow: 3px 2px rgb(207, 222, 12);
+    margin-bottom: 50px;
+    font-size: 50px;
+}  
+
+
+  #cardboard {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .memory-card {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    background: -webkit-radial-gradient(rgb(10, 132, 40), rgb(190, 239, 41));
+    background: radial-gradient(rgb(10, 132, 40), rgb(190, 239, 41));
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
